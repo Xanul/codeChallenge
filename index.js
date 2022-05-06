@@ -1,11 +1,9 @@
-const StudentService = require("./lib/services/StudentService");
-const Reader = require("./lib/utils/reader");
+const StudentController = require("./lib/controllers/StudentController");
 
-const testArray = Reader.readDataFile('./test/data/studentsTest.json');
 
-const test2 = StudentService.getAllStudents(testArray);
+const test = StudentController.getEmailWithCertificationCtrl()
+console.log(test)
 
-console.log(test2.length)
 
 
 
