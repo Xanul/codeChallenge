@@ -1,13 +1,9 @@
 const StudentService = require("../../lib/services/StudentService");
 const Reader = require("../../lib/utils/reader");
 
-
-const allStudentsFile = Reader.readDataFile("./test/data/studentsTest.json");
-
-
 describe("Testing StudentService.js", () => {
     
-    const studentsArrayTest = Reader.readDataFile('students.json')
+    const studentsArrayTest = Reader.readDataFile("students.json");
 
     test("Testing getAllStudents method", () => {
         const allStudents = StudentService.getAllStudents(studentsArrayTest);
