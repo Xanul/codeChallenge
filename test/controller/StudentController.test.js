@@ -1,12 +1,8 @@
 const StudentController = require("../../lib/controllers/StudentController");
 
-
-
-
 describe("Testing StudentController.js", () => {
 
     test("Testing getAllStudents method", () => {
-
         const allStudents = StudentController.getAllStudentsCtrl();
         expect(allStudents.length).toBe(51);
         expect(allStudents[0]).toBeDefined();
